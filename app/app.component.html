@@ -5,4 +5,10 @@
     <input type="text" [value]="name" (keyup.enter)="name=$event.target.value">
     <input type="text" [(ngModel)] = "name">
 <button (click)="changeSuiteColor()">Change font color</button>
+<br/>
+
+<ul>
+	<li *ngFor="let c of customers"></li>
+	<my-customer [customer] = c></my-customer>
+</ul>
     
